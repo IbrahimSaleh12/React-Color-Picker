@@ -17,6 +17,9 @@ export default {
     "& a": {
       textDecoration: "none",
       color: "black"
+    },
+    "@media(max-width:575.98px)": {
+      display: "none"
     }
   },
   slider: {
@@ -38,6 +41,9 @@ export default {
       height: "13px",
       marginLeft: "-7px",
       marginTop: "-3px"
+    },
+    "@media(max-width:991.98px)": {
+      width: "150px",
     }
   },
   selectContainer: {

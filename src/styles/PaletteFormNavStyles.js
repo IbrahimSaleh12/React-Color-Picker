@@ -33,10 +33,17 @@ const styles = theme => ({
     marginRight: "1rem",
     "& a": {
       textDecoration: "none"
+    },
+    "@media(max-width:567.98px)": {
+      marginRight: "0.5rem"
     }
   },
   button: {
-    margin: "0 0.5rem"
+    margin: "0 0.5rem",
+    "@media(max-width:567.98px)": {
+      margin: 0,
+      padding: "0.5rem"
+    }
   }
 });
 
