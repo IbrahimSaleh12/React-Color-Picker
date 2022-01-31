@@ -1,4 +1,5 @@
 import chroma from "chroma-js";
+import sizes from "./sizes";
 
 export default {
   ColorBox: {
@@ -11,7 +12,21 @@ export default {
     marginBottom: "-3.5px",
     "&:hover button": {
       opacity: 1
+    },
+    "@media(max-width:1199.98px)": {
+      width: "25%",
+      height: props => (props.showingFullPalette ? "20%" : "10%"),
+    },
+    "@media(max-width:991.98px)": {
+      width: "50%",
+      height: props => (props.showingFullPalette ? "10%" : "10%"),
+    },
+    "@media(max-width:575.98px)": {
+      width: "100%",
+      height: props => (props.showingFullPalette ? "5%" : "10%"),
     }
+
+
   },
   copyText: {
     color: props =>
