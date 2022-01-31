@@ -15,11 +15,11 @@ export default {
     },
     "@media(max-width:1199.98px)": {
       width: "25%",
-      height: props => (props.showingFullPalette ? "20%" : "10%"),
+      height: props => (props.showingFullPalette ? "20%" : "33.333%"),
     },
     "@media(max-width:991.98px)": {
       width: "50%",
-      height: props => (props.showingFullPalette ? "10%" : "10%"),
+      height: props => (props.showingFullPalette ? "10%" : "20%"),
     },
     "@media(max-width:575.98px)": {
       width: "100%",
@@ -118,7 +118,10 @@ export default {
       textAlign: "center",
       marginBottom: "0",
       padding: "1rem",
-      textTransform: "uppercase"
+      textTransform: "uppercase",
+      "@media(max-width:575.98px)": {
+        fontSize: "6rem"
+      }
     },
     "& p": {
       fontSize: "2rem",
